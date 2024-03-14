@@ -5,7 +5,7 @@ public class Swap {
         for(int x: arr)
             System.out.print(x+" ");
 
-        swap(arr, 1, 3);
+        swap(arr, 0, 4);
         System.out.println();
 
         for(int x: arr)
