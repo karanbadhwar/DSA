@@ -11,6 +11,7 @@ public class InputOutput2D {
 
         System.out.println(arr.length); // Number of rows
 
+
         //Input
         //For loop for Each Row
         for(int row =0 ; row < arr.length; row++)
