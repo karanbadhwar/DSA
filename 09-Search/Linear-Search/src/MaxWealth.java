@@ -12,12 +12,20 @@ public class MaxWealth {
 
     static public int maximumWealth(int[][] accounts) {
         int maximum = 0;
-        for (int person = 0; person < accounts.length; person++) {
+        for (int[] ints : accounts) {
             int sum = 0;
-            for (int account = 0; account < accounts[person].length; account++) {
-                sum += accounts[person][account];
+            for (int account : ints) {
+                sum += account;
             }
-            maximum = max(sum,maximum);
+
+            /*
+            if(sum > maximum)
+            {
+                maximum = sum;
+            }
+             */
+
+            maximum = max(sum, maximum);
         }
         return maximum;
     }
