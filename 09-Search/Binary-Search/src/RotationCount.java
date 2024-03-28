@@ -9,7 +9,7 @@ public class RotationCount {
         int pivot = findingPivot(arr);
         if(pivot == -1)
         {
-            return -1;
+            return 0;
         } else{
             return pivot + 1;
         }
