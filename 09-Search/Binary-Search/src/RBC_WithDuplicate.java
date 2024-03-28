@@ -1,13 +1,12 @@
-public class RotatedBinarySearch {
+public class RBC_WithDuplicate {
     public static void main(String[] args) {
-        int[] arr= {4,5,6,7,0,1,2};
-        System.out.println(findPivot(arr));
-        int target = 4;
-        int ans =  search(arr,target);
+        int[] arr= {4,5,6,7,7,0,1,2};
+
+        System.out.println(search(arr, 7));
     }
 
     static public int search(int[] nums, int target) {
-        int pivot = findPivot(nums);
+        int pivot = findPivotWithDuplicate(nums);
 
         //If you did not find a pivot, it means array is not rotated
         if(pivot == -1)
@@ -33,7 +32,7 @@ public class RotatedBinarySearch {
 
     }
 
-    static int findPivot(int[] arr)
+    static int findPivotWithDuplicate(int[] arr)
     {
         int start = 0;
         int end = arr.length - 1;
@@ -54,16 +53,28 @@ public class RotatedBinarySearch {
                 return mid - 1;
             }
 
-            // Case3
-            if(arr[start] >= arr[mid])
+            //If elements at middle, start and end are equal then just skip the duplicates
+            if(arr[mid] == arr[start] && arr[mid] == end)
             {
-                end = mid - 1;
-            }
 
-            // Case 4
-            if(arr[start] <= arr[mid])
-            {
-                start = mid +1;
+                //Checking if the start or end is either the Pivot or not
+                if(arr[start] > arr[start + 1])
+                {
+                    return start;
+                }
+                start++;
+                if(arr[end] < arr[end-1])
+                {
+                    return end -1 ;
+                }
+                end--;
+
+                if(arr[start] < arr[mid] || arr[start] == arr[mid] && arr[mid] > arr[end])
+                {
+                    start = mid + 1;
+                } else {
+                    end = mid - 1;
+                }
             }
 
         }
