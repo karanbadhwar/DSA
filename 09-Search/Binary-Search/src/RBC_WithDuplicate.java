@@ -54,20 +54,18 @@ public class RBC_WithDuplicate {
             }
 
             //If elements at middle, start and end are equal then just skip the duplicates
-            if(arr[mid] == arr[start] && arr[mid] == end)
-            {
+            if(arr[mid] == arr[start] && arr[mid] == end) {
 
                 //Checking if the start or end is either the Pivot or not
-                if(arr[start] > arr[start + 1])
-                {
+                if (arr[start] > arr[start + 1]) {
                     return start;
                 }
                 start++;
-                if(arr[end] < arr[end-1])
-                {
-                    return end -1 ;
+                if (arr[end] < arr[end - 1]) {
+                    return end - 1;
                 }
                 end--;
+            }
 
                 if(arr[start] < arr[mid] || arr[start] == arr[mid] && arr[mid] > arr[end])
                 {
@@ -77,7 +75,7 @@ public class RBC_WithDuplicate {
                 }
             }
 
-        }
+
         return -1;
     }
 
