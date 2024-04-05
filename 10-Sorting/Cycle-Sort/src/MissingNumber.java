@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class MissingNumber {
@@ -14,7 +13,7 @@ public class MissingNumber {
         int i = 0;
         while(i < nums.length)
         {
-            if(nums[i] != i  && nums[i] != nums.length)
+            if(nums[i] != i  && nums[i] != nums.length) //if(nums[i] < nums.length && nums[i] != i)
             {
                 swap(nums,i, nums[i]);
             } else {
@@ -22,6 +21,8 @@ public class MissingNumber {
             }
         }
 
+
+        //Search for Missing Number
         for (int j = 0; j < nums.length; j++)
         {
             if(j != nums[j])
@@ -31,6 +32,7 @@ public class MissingNumber {
 
         }
 
+        //Case 2
         return nums.length;
     }
 
