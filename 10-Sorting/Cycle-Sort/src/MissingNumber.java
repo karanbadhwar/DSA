@@ -13,7 +13,7 @@ public class MissingNumber {
         int i = 0;
         while(i < nums.length)
         {
-            if(nums[i] != i  && nums[i] != nums.length) //if(nums[i] < nums.length && nums[i] != i)
+            if(nums[i] != i  && nums[i] < nums.length) //if(nums[i] < nums.length && nums[i] != i)
             {
                 swap(nums,i, nums[i]);
             } else {

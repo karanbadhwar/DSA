@@ -12,7 +12,6 @@ public class DuplicateNumbers {
         //Looping through the Array
         while(i < nums.length)
         {
-
             if(nums[i] != i + 1)
             {
                 int correctIndex = nums[i] -1;
@@ -22,10 +21,10 @@ public class DuplicateNumbers {
                 } else {
                         return nums[i];
                     }
-                } else{
-                    i++;
-                }
+            } else{
+                i++;
             }
+        }
 
         return -1;
     }
