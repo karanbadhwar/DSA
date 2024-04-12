@@ -13,5 +13,16 @@ public class Main {
                Note:- Y is Time taken and X is Input/Size
          */
 
+        /*
+            Big O - Upper Bound (Complexity cannot exceed than this)
+            Big O - f(N)/g(N) < Infinity
+
+            Big-Omega - Lower Bound (Minimum Complexity will be this)
+            Big-Omega - f(N)/g(N) > 0
+
+            Big-Theta - When a function have both Lower and Upper bound
+            Big Theta - 0 < f(N)/g(N) < Infinity
+         */
+
     }
 }
