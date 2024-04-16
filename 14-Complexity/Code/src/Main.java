@@ -41,6 +41,25 @@ public class Main {
         /*
             Only calls that are Interlinked with each other will be in Stack at the same time!
             NO two functions will be in the stack that are on the same level in Recursion Tree
+
+            Ex:- In Fibonacci Numbers with Recursion space complexity will be O(N) height of the tree
+         */
+
+        /*
+            Type of Recursion;
+            1 - Linear - (Ex- Fibonacci = F(N) = F(N-1) + F(N-2))
+            2 - Divide and Conquer (Ex - Binary Search = F(N) = F(N/2) + O(1)) T(n)=aT(n/b)+f(n) - FORM
+         */
+
+        /*
+            How to solve to get complexity -
+            1 - Plug and Chug
+            2 - Master's Theorem
+            3 - Akra Bazzi Formula
+         */
+
+        /*
+            Akra Bazzi:-
          */
 
     }
