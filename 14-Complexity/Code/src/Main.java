@@ -13,15 +13,34 @@ public class Main {
                Note:- Y is Time taken and X is Input/Size
          */
 
-        /*
+        /* Time Complexity
+        Notations:-
             Big O - Upper Bound (Complexity cannot exceed than this)
-            Big O - f(N)/g(N) < Infinity
+            Big O - f(N)/g(N) < Infinity (f <= g)
 
             Big-Omega - Lower Bound (Minimum Complexity will be this)
-            Big-Omega - f(N)/g(N) > 0
+            Big-Omega - f(N)/g(N) > 0 (f >= g)
 
             Big-Theta - When a function have both Lower and Upper bound
             Big Theta - 0 < f(N)/g(N) < Infinity
+
+            Little-O - It is loose Upper Bound
+            Little-o - f(N)/g(N) = 0 (f < g) strictly slower than g
+
+            Little-Omega - It is loose Lower Bound
+            Little-Omega - f(N)/g(N) = Infinity (f > g) strictly slower than g
+         */
+
+        /* Space Complexity = Input Space + Auxiliary Space !!
+            Auxiliary space is the Extra Space taken by the Algorithm
+            Ex:- In Binary Search, an array will only take extra(Auxiliary) 3 spaces regardless of how much,
+            array size increases.
+
+         */
+
+        /*
+            Only calls that are Interlinked with each other will be in Stack at the same time!
+            NO two functions will be in the stack that are on the same level in Recursion Tree
          */
 
     }
