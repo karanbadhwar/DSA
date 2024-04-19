@@ -76,5 +76,14 @@ public class Main {
                (21)Base8 = (?)Base10
                2*8^1 + 1*8^0 = 17
          */
+
+        /*
+            Bit-masking is the act of applying a mask over a value to keep, change or modify a piece of given information.
+         */
+
+        /*
+            1st bit is the most significant bit
+            Last bit is the least significant bit
+         */
     }
 }
