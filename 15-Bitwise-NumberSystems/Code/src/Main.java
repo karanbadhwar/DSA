@@ -82,8 +82,19 @@ public class Main {
          */
 
         /*
-            1st bit is the most significant bit
+            1st bit is the most significant bit (The first bit signifies if a Number is +ve or -ve)
             Last bit is the least significant bit
+
+            -ve Numbers in binary system are stored in 2's Compliment method
+            Steps to get a -ve number in binary
+            1 - Compliment every bit
+            2 - Add 1 to it
          */
+
+        /*
+            Range Formula:- for n bits, as First bit is used for +ve or -ve
+            -2^n-1 to 2^n-1 - 1
+         */
+
     }
 }
