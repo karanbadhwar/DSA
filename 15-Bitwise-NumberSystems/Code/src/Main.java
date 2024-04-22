@@ -96,5 +96,9 @@ public class Main {
             -2^n-1 to 2^n-1 - 1
          */
 
+        /*
+            Sum of nth row in Pascal Triangle - 2^n-1 (1 << n-1)
+         */
+
     }
 }
