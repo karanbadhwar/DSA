@@ -1,5 +1,7 @@
 public class SeiveOfEratosthenes  {
     public static void main(String[] args) {
+
+        // Time Complexity is O(N*log(log N))
         int n = 40;
         boolean[] primes = new boolean[n+1];
         sieve(n,primes);
