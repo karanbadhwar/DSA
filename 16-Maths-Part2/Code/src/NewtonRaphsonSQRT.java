@@ -3,7 +3,7 @@ public class NewtonRaphsonSQRT {
 
     //Formula -> root = (x + N/x)/2 X-> sqrt we assumed
     public static void main(String[] args) {
-        System.out.println(sqrt(11));
+        System.out.println(sqrt(40));
     }
 
     static double sqrt(int n)
