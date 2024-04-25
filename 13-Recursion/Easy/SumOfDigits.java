@@ -4,6 +4,7 @@ public class SumOfDigits {
         System.out.println(ans);
     }
 
+    //O(logN) - Time Complexity with Base 10
     static int sumDigits(int n)
     {
         if(n == 0)
