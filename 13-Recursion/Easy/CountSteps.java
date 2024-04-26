@@ -20,7 +20,7 @@ public class CountSteps {
 
         if(num % 2 == 0)
         {
-            return helper(num/2, ++steps)
+            return helper(num/2, ++steps);
          } else {
             return helper(num - 1, ++steps);
         }
