@@ -104,7 +104,7 @@ public class LinearSearch_Recursion {
             return list;
         }
 
-        //This will contain answer from individual function call only
+        //This will contain answer from individual function call only NOT OPTIMIZED
         if(arr[index] == target )
         {
             list.add(index);
@@ -113,7 +113,7 @@ public class LinearSearch_Recursion {
         ArrayList<Integer> listReturned = findAllIndex_List(arr,target,index+1);
 
         //Returned List i.e. Answer from below calls
-        if(listReturned.size() > 0)
+        if(!listReturned.isEmpty())
         {
 //            for (int value: listReturned)
 //                list.add(value);
