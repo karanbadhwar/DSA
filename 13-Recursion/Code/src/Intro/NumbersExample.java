@@ -1,3 +1,5 @@
+package Intro;
+
 public class NumbersExample {
     public static void main(String[] args) {
         // write a function that takes in a number and prints it
