@@ -3,6 +3,7 @@ package Strings;
 import java.util.ArrayList;
 import java.util.List;
 
+//Time and Space Complexity is O(N*2^N)
 public class SubSet {
     public static void main(String[] args) {
         int[] arr = {1,2,3};
@@ -30,7 +31,6 @@ public class SubSet {
                 outer.add(internal);
             }
         }
-
 
         return outer;
     }
