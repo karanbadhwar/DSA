@@ -9,7 +9,7 @@ public class PermutationArrayList {
         list = permutationsList("", "abc");
         System.out.println(list);
 
-        System.out.println(permutationsCount("", "abc"));
+        System.out.println(permutationsCount("", "abcd"));
     }
 
     static ArrayList<String> permutationsList(String p, String up) {
