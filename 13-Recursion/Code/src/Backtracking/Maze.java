@@ -5,7 +5,13 @@ import java.util.ArrayList;
 public class Maze {
     public static void main(String[] args) {
 //        path("",3,3);
-        System.out.println(pathRetDiagonal("", 3,3));
+//        System.out.println(pathRetDiagonal("", 3,3));
+        boolean[][] board = {
+                {true,true,true},
+                {true,false,true},
+                {true,true,true},
+        };
+        pathRestrict("", board, 0,0);
     }
 
     //Returning Count
@@ -83,5 +89,29 @@ public class Maze {
             list.addAll(pathRetDiagonal(pro + "H", row, col - 1));
         }
         return list;
+    }
+
+    //Path with Restriction
+    static void pathRestrict(String pro, boolean[][] maze,int row, int col)
+    {
+        //Base Condition
+        if(row == maze.length-1 && col == maze[0].length-1)
+        {
+            System.out.println(pro);
+            return;
+        }
+
+        if(!maze[row][col])
+        {
+            return;
+        }
+
+        if(row < maze.length - 1) {
+
+            pathRestrict(pro + "D", maze,row + 1, col);
+        }
+        if(col < maze[0].length - 1) {
+            pathRestrict(pro + "R", maze, row, col + 1);
+        }
     }
 }
