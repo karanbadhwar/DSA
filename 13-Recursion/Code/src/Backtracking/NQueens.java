@@ -8,6 +8,21 @@ public class NQueens {
         int n = 4;
         boolean[][] board = new boolean[n][n];
         queens(board,0);
+
+        //Proof of backtracking happened
+        for(boolean[] arr: board)
+        {
+            for(boolean element: arr)
+            {
+                if(element)
+                {
+                    System.out.print("Q ");
+                }else{
+                    System.out.print("X ");
+                }
+            }
+            System.out.println();
+        }
     }
 
     static int queens(boolean[][] board, int row)
