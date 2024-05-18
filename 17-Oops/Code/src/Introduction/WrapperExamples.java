@@ -19,7 +19,7 @@ public class WrapperExamples {
     //Integer is a final class, it's value will not change
     //Final prevents from getting the Content modified
     //Final variable needs to be initialized when being declared!
-    static void swap(Integer a, Integer b) {
+    public static void swap(Integer a, Integer b) {
         int temp = a;
         a = b;
         b = temp;
