@@ -10,6 +10,11 @@ public class InnerClasses {
         public TestClass(String name) {
             this.name = name;
         }
+
+        @Override
+        public String toString() {
+            return name;
+        }
     }
 
     public static void main(String[] args) {
@@ -21,6 +26,8 @@ public class InnerClasses {
         //Same way, if I have static variable inside Static class, that variable will be independent of static class's objects
         TestClass a = new TestClass("Karan");
         TestClass b = new TestClass("Badhwar");
+
+        System.out.println(a);
 
     }
 }
