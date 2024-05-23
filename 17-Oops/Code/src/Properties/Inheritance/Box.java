@@ -1,10 +1,16 @@
 package Properties.Inheritance;
 
 public class Box {
-    private double l;
+    private double l; // This is Data Hiding
     //    private double l; // Private variables can only be used in the current file and inside the class only
     double w;
     double h;
+
+    /*
+    Data Hiding -
+        Data hiding is a principle of OOP that restricts direct access to some of an object's data and methods.
+        This helps to protect the integrity of the object's state and prevents external code from depending on or altering internal implementation details.
+     */
 
     double weight = 89.0d;
 
@@ -38,6 +44,16 @@ public class Box {
         this.l = old.l;
         this.w = old.w;
         this.h = old.h;
+    }
+
+    //Getter
+    public double getL() {
+        return l;
+    }
+
+    //Setter
+    public void setL(double l) {
+        this.l = l;
     }
 
     static void greetings() {
