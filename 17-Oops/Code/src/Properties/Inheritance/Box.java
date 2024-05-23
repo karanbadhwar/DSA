@@ -24,6 +24,7 @@ public class Box {
         this.h = side;
     }
 
+
     Box(double l, double w, double h) {
 //        super(); // calling the constructor of Object class
         System.out.println("Constructor 3");
@@ -37,6 +38,10 @@ public class Box {
         this.l = old.l;
         this.w = old.w;
         this.h = old.h;
+    }
+
+    static void greetings() {
+        System.out.println("Hey, I am in Box Class!");
     }
 
     public void information() {

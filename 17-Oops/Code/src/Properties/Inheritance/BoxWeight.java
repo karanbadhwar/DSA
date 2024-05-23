@@ -4,6 +4,10 @@ package Properties.Inheritance;
 public class BoxWeight extends Box {
     double weight;
 
+//    static void greetings() {
+//        System.out.println("Hey, I am in BoxWeight Class!");
+//    }
+
     public BoxWeight() {
         this.weight = -1;
 //        this.w = 5555; // Can use only if it is not private
