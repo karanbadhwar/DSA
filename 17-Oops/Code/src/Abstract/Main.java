@@ -26,6 +26,9 @@ public class Main {
 
 //        Parent parent = new Parent(); Cannot create object of Abstract class
 
+        //Can use the Abstract class as a variable Reference
+        Parent daughter2 = new Daughter(23);
+
         Parent.hello();
 
     }

@@ -1,11 +1,15 @@
 package Abstract;
 
-abstract public class Parent {
+//An Abstract class cannot be FINAL!!
+public abstract class Parent {
 
     int age;
 
+    final int VALUE;
+
     public Parent(int age) {
         this.age = age;
+        this.VALUE = 33455;
     }
 
     static void hello() {
