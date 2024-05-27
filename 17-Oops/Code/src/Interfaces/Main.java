@@ -13,6 +13,13 @@ public class Main {
          * Implement multiple interfaces.
          * Interface to Interface -> extends
          * Interface to Class -> implements
+         * Nested Interfaces can be Public, Protected and private while Normal Interfaces can only be,
+           Public or Default.
+         * Access Modifier for the Overridden methods should be same or better
+            Ex -
+            * if Protected method (a) is being overridden so the overridden method should at least be protected or public
+                 not private!!
+
          */
 
         Car car = new Car();
