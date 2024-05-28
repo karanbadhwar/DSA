@@ -2,19 +2,20 @@ package Generics;
 
 import java.util.Arrays;
 
-public class CustomArrayList {
+public class CustomGenericArrayList<T> {
 
-    private int[] data;
+    private Object[] data;
 
     private int size = 0;
 
     private static int DEFAULT_SIZE = 10;
 
-    public CustomArrayList() {
-        this.data = new int[DEFAULT_SIZE];
+    public CustomGenericArrayList() {
+//        this.data = new T[DEFAULT_SIZE]; //Cannot create instances of Type Parameter
+        this.data = new Object[DEFAULT_SIZE];
     }
 
-    public void add(int num) {
+    public void add(T num) {
         if (isFull()) {
             resize();
         }
@@ -24,7 +25,7 @@ public class CustomArrayList {
     }
 
     private void resize() {
-        int[] temp = new int[data.length * 2];
+        Object[] temp = new Object[data.length * 2];
 
         //Copying the array items into the new array
 
@@ -41,14 +42,14 @@ public class CustomArrayList {
     }
 
     //Removing the data and decreasing the size by 1
-    public int remove() {
-        int removed = data[--size];
+    public T remove() {
+        T removed = (T) (data[--size]);
         return removed;
     }
 
     //Getting the item at particular index
-    public int get(int index) {
-        return data[index];
+    public T get(int index) {
+        return (T) (data[index]);
     }
 
     //Getting the size of the array i.e., data in this case
@@ -57,16 +58,13 @@ public class CustomArrayList {
     }
 
     //Setting the value at a particular index
-    public void set(int index, int value) {
+    public void set(int index, T value) {
         data[index] = value;
     }
 
     @Override
     public String toString() {
-        return "CustomArrayList{" +
-                "data=" + Arrays.toString(data) +
-                ", size=" + size +
-                '}';
+        return Arrays.toString(data);
     }
 
     public static void main(String[] args) {
@@ -75,11 +73,21 @@ public class CustomArrayList {
 //        list2.add(233); //Can do
 //        list2.add("sdsad"); //Can do
 
-        CustomArrayList list = new CustomArrayList();
+//        CustomGenericArrayList list = new CustomGenericArrayList();
+//        list.add(3);
+//        list.add(5);
+//        list.add(9);
+//
+//        System.out.println(list);
+
+
+        CustomGenericArrayList<Integer> list = new CustomGenericArrayList<>();
+        list.add(4);
         list.add(3);
         list.add(5);
-        list.add(9);
+//        list.add("sadas"); //Error
 
         System.out.println(list);
+
     }
 }
