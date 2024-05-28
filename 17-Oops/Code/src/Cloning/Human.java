@@ -24,7 +24,7 @@ public class Human implements Cloneable {
 //        return super.clone();
 //    }
 
-    @Override
+    @Override //Overridden from Parent Class i.e. Object class
     public Object clone() throws CloneNotSupportedException {
         //This is a Deep Copy
         Human twin = (Human) super.clone(); // this is shallow copy part
