@@ -18,6 +18,8 @@ public class Main {
 //        if (stringList.getClass() == integerList.getClass()) {
 //            System.out.println("Type information is erased at runtime!");
 //        }
+//
+//        System.out.println(stringList.getClass());
     }
 
 
