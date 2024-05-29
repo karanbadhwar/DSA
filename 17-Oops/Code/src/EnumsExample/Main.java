@@ -1,11 +1,17 @@
 package EnumsExample;
 
 public class Main {
-    enum Week {
+    enum Week implements A {
         Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday;
 
         Week() {
             System.out.println("Constructor called for " + this);
+        }
+
+//        void display(); Abstract Methods are not allowed, a body should be there in Enum.
+
+        public void hello() {
+            System.out.println("hey, how are you ?");
         }
         //This is not public or protected, instead only private or default.
 
@@ -14,7 +20,7 @@ public class Main {
 
     public static void main(String[] args) {
         /*
-            Enums: -
+            Enums: - Enum is a special Class. It has set Number of Constants.
                 Syntax -
                     enum Week{
                     Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday;
@@ -34,12 +40,17 @@ public class Main {
 //            System.out.println(day);
 //        }
 
+        /*
+        When you assign Week.Monday to day, day references the Monday instance in the heap.
+         */
         Week day;
         day = Week.Monday;
-
+        day.hello();
 
         //Ordinal -> Position of the enum declared at.
 //        System.out.println(day.ordinal());
+
+        System.out.println(Week.valueOf("Monday"));
     }
 
 }
