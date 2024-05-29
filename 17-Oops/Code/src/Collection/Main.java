@@ -12,6 +12,13 @@ public class Main {
              * In Java.util.....;
          */
 
+        /*
+            Vector Synchronisation:
+             * ArrayList is not Synchronized.
+             * Vector is synchronized, as One Thread can use Vector resources at a time.
+         */
+
+
 //        Collection
         List<Integer> list = new ArrayList<>();
         List<Integer> list2 = new LinkedList<>();
@@ -23,6 +30,6 @@ public class Main {
 
         System.out.println(list2);
 
-        
+
     }
 }
