@@ -28,6 +28,11 @@ public class Main {
          */
 
         CustomLinkedList list = new CustomLinkedList();
+        list.insertFirst(3);
+        list.insertFirst(2);
+        list.insertFirst(8);
+        list.insertFirst(17);
+        list.display();
 //        LinkedList<Integer> internalList = new LinkedList<>();
 //        internalList.getFirst();//Head
 

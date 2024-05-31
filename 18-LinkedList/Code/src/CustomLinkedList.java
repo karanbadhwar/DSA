@@ -23,6 +23,23 @@ public class CustomLinkedList {
         size+=1;
     }
 
+    //Adding the element at the Last (End)
+
+    // Displaying the Linked List
+    //TC -> O(N)
+    public void display()
+    {
+        //Imp to take extra temp Node type Variable, if we do this with Head, head itself will move the structure.
+        Node temp = head;
+
+        while(temp != null)
+        {
+            System.out.print(temp.value + " -> ");
+            temp = temp.next; // Moving temp forward
+        }
+        System.out.println("END");
+    }
+
 
     private class Node{
         private int value;
