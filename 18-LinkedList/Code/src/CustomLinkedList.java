@@ -40,8 +40,12 @@ public class CustomLinkedList {
     }
 
     //Inserting element at the given Index
-    public void insert(int val, int index)
+    public void insert(int val, int index) throws IndexOutOfBoundsException
     {
+        if(index > size)
+        {
+            throw new IndexOutOfBoundsException("Index Provided was more than the actual size");
+        }
 
         if(index == 0)
         {
@@ -61,8 +65,92 @@ public class CustomLinkedList {
 
         Node node = new Node(val,temp.next);
         temp.next = node;
+        size++;
 
+    }
 
+    //Deleting the First Element
+    public int deleteFirst()
+    {
+        if( size == 0)
+        {
+            throw new IndexOutOfBoundsException("Cannot delete from an empty list");
+        }
+
+        int value = head.value;
+        head = head.next;
+        if(head == null)
+        {
+            tail = null;
+        }
+        size--;
+        return value;
+    }
+
+    //Deleting the Last Element
+    public int deleteLast()
+    {
+        if(size <= 1)
+        {
+            return deleteFirst();
+
+        }
+
+        Node secondLast = get(size - 2);
+        int value = tail.value;
+        secondLast.next = null;
+        tail = secondLast;
+        size--;
+        return value;
+    }
+
+    //Deleting a particular Node
+    public int delete(int index)
+    {
+        //Deleting First Index
+        if(index == 0)
+        {
+            return deleteFirst();
+        }
+
+        //Deleting Last Index
+        if(index == size -1)
+        {
+            return deleteLast();
+        }
+
+        Node previous = get(index - 1);
+
+        int value = previous.next.value;
+        previous.next = previous.next.next; // Accessing the Next Node's next.
+        size--;
+        return value;
+    }
+
+    //Getting the Node from the value being passed.
+    private Node find(int value)
+    {
+        Node node = head;
+        while(node != null)
+        {
+            if(node.value == value)
+            {
+                return node;
+            }
+            node = node.next;
+        }
+        return null;
+    }
+
+    //Getting the value of a Particular Node
+    private Node get(int index)
+    {
+        Node node = head;
+        for (int i = 0; i < index; i++) {
+            node = node.next;
+        }
+//        System.out.println("Second last Node" + node.value); // For Fixing Bug
+        return node;
     }
 
     // Displaying the Linked List

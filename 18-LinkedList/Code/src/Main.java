@@ -33,7 +33,21 @@ public class Main {
         list.insertFirst(8);
         list.insertFirst(17);
         list.insertLast(99);
-        list.insert(100,3);
+        try{
+            list.insert(100,3);
+        }catch (IndexOutOfBoundsException err)
+        {
+            System.out.println("Halle Lueiya" + err);
+        }
+
+        list.display();
+        System.out.println(list.deleteFirst());
+        list.display();
+
+        System.out.println(list.deleteLast());
+        list.display();
+
+        System.out.println(list.delete(2));
         list.display();
 //        LinkedList<Integer> internalList = new LinkedList<>();
 //        internalList.getFirst();//Head
