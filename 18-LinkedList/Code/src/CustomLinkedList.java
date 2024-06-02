@@ -24,6 +24,46 @@ public class CustomLinkedList {
     }
 
     //Adding the element at the Last (End)
+    public void insertLast(int val)
+    {
+        //Checking if Tail is Empty, that means list is empty
+        if(tail == null)
+        {
+            insertFirst(val);
+            return;
+        }
+
+        Node node = new Node(val);
+        tail.next = node;
+        tail = node;
+        size++;
+    }
+
+    //Inserting element at the given Index
+    public void insert(int val, int index)
+    {
+
+        if(index == 0)
+        {
+            insertFirst(val);
+            return;
+        }
+        if(index == size)
+        {
+            insertLast(val);
+            return;
+        }
+
+        Node temp = head;
+        for (int i = 1; i < index; i++) {
+            temp = temp.next;
+        }
+
+        Node node = new Node(val,temp.next);
+        temp.next = node;
+
+
+    }
 
     // Displaying the Linked List
     //TC -> O(N)
