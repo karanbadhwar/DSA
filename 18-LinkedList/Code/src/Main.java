@@ -27,30 +27,44 @@ public class Main {
 
          */
 
-        CustomLinkedList list = new CustomLinkedList();
+//        CustomLinkedList list = new CustomLinkedList();
+//        list.insertFirst(3);
+//        list.insertFirst(2);
+//        list.insertFirst(8);
+//        list.insertFirst(17);
+//        list.insertLast(99);
+//        try{
+//            list.insert(100,3);
+//        }catch (IndexOutOfBoundsException err)
+//        {
+//            System.out.println("Halle Lueiya" + err);
+//        }
+//
+//        list.display();
+//        System.out.println(list.deleteFirst());
+//        list.display();
+//
+//        System.out.println(list.deleteLast());
+//        list.display();
+//
+//        System.out.println(list.delete(2));
+//        list.display();
+//        LinkedList<Integer> internalList = new LinkedList<>();
+//        internalList.getFirst();//Head
+
+        /*
+            Doubly LinkedList: -
+                * Doubly LinkedList has two ref variables in the Dat Structure, One points to Previous Node,
+                    Second points to Next Node.
+         */
+
+        CustomDoublyLL list = new CustomDoublyLL();
         list.insertFirst(3);
         list.insertFirst(2);
         list.insertFirst(8);
         list.insertFirst(17);
-        list.insertLast(99);
-        try{
-            list.insert(100,3);
-        }catch (IndexOutOfBoundsException err)
-        {
-            System.out.println("Halle Lueiya" + err);
-        }
+
 
         list.display();
-        System.out.println(list.deleteFirst());
-        list.display();
-
-        System.out.println(list.deleteLast());
-        list.display();
-
-        System.out.println(list.delete(2));
-        list.display();
-//        LinkedList<Integer> internalList = new LinkedList<>();
-//        internalList.getFirst();//Head
-
         }
     }
