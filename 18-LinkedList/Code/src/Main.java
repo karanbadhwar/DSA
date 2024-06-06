@@ -58,16 +58,33 @@ public class Main {
                     Second points to Next Node.
          */
 
-        CustomDoublyLL list = new CustomDoublyLL();
-        list.insertFirst(3);
-        list.insertFirst(2);
-        list.insertFirst(8);
-        list.insertFirst(17);
-        list.insertLast(99);
+//        CustomDoublyLL list = new CustomDoublyLL();
+//        list.insertFirst(3);
+//        list.insertFirst(2);
+//        list.insertFirst(8);
+//        list.insertFirst(17);
+//        list.insertLast(99);
+//
+//        list.insert(1,8);
+//
+//
+//        list.display();
 
-        list.insert(1,8);
+        /*
+            Circular Linked List:
+                * Linked List goes in Circle, such as no node will be null even tail will be pointing to head and there
+                    will be no previous node.
+         */
 
+    CircularLinkedList list = new CircularLinkedList();
+    list.insert(10);
+    list.insert(20);
+    list.insert(30);
+    list.insert(40);
+    list.display();
 
-        list.display();
-        }
+    list.delete(300);
+    list.delete(20);
+    list.display();
+}
     }
