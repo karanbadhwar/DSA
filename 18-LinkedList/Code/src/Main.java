@@ -27,7 +27,7 @@ public class Main {
 
          */
 
-        CustomLinkedList list = new CustomLinkedList();
+//        CustomLinkedList list = new CustomLinkedList();
 //        list.insertFirst(3);
 //        list.insertFirst(2);
 //        list.insertFirst(8);
@@ -45,15 +45,15 @@ public class Main {
 //        }
 //
 
-        list.insertFirst(1);
-        list.insertFirst(1);
-        list.insertFirst(1);
-        list.insertFirst(2);
-        list.insertFirst(4);
-        list.insertFirst(4);
-        list.insertFirst(4);
-        list.deleteDuplicates();
-        list.display();
+//        list.insertFirst(1);
+//        list.insertFirst(1);
+//        list.insertFirst(1);
+//        list.insertFirst(2);
+//        list.insertFirst(4);
+//        list.insertFirst(4);
+//        list.insertFirst(4);
+//        list.deleteDuplicates();
+//        list.display();
 //        System.out.println(list.deleteFirst());
 //        list.display();
 //
@@ -99,5 +99,8 @@ public class Main {
 //    list.delete(300);
 //    list.delete(20);
 //    list.display();
+
+
+
 }
     }

@@ -227,4 +227,61 @@ public class CustomLinkedList {
         }
         tail = temp;
     }
+
+    //Merge Two Sorted Lists
+    public static CustomLinkedList mergeTwoLists(CustomLinkedList first, CustomLinkedList second)
+    {
+        Node f = first.head;
+        Node s = second.head;
+
+        CustomLinkedList ans = new CustomLinkedList();
+
+        //Termination Condition
+        while(f != null && s != null)
+        {
+            //Comparing the values
+            if(f.value < s.value)
+            {
+                ans.insertLast(f.value);
+                f= f.next;
+            } else {
+                ans.insertLast(s.value);
+                s = s.next;
+            }
+        }
+
+        //Checking if any list is left with few nodes
+        while(f != null)
+        {
+            ans.insertLast(f.value);
+            f = f.next;
+        }
+
+        while(s != null)
+        {
+            ans.insertLast(s.value);
+            s = s.next;
+        }
+
+        return ans;
+
+    }
+
+    public static void main(String[] args) {
+        CustomLinkedList list1 = new CustomLinkedList();
+        CustomLinkedList list2 = new CustomLinkedList();
+
+        list1.insertLast(1);
+        list1.insertLast(3);
+        list1.insertLast(5);
+
+        list2.insertLast(1);
+        list2.insertLast(2);
+        list2.insertLast(9);
+        list2.insertLast(14);
+
+        CustomLinkedList mergeList = mergeTwoLists(list1,list2);
+        mergeList.display();
+
+    }
 }
