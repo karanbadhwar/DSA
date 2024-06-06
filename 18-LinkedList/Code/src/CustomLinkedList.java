@@ -69,6 +69,26 @@ public class CustomLinkedList {
 
     }
 
+    //Insert using Recursion
+    public void insertRec(int val, int index)
+    {
+        head = insertRec(val,index,head);
+    }
+
+    private Node insertRec(int val, int index, Node node)
+    {
+        // Base condition
+        if(index == 0)
+        {
+            Node newNode = new Node(val, node);
+            size++;
+            return newNode;
+        }
+
+        node.next = insertRec(val, index-1, node.next);
+        return node;
+    }
+
     //Deleting the First Element
     public int deleteFirst()
     {

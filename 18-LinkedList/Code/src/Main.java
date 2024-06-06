@@ -27,12 +27,14 @@ public class Main {
 
          */
 
-//        CustomLinkedList list = new CustomLinkedList();
-//        list.insertFirst(3);
-//        list.insertFirst(2);
-//        list.insertFirst(8);
-//        list.insertFirst(17);
-//        list.insertLast(99);
+        CustomLinkedList list = new CustomLinkedList();
+        list.insertFirst(3);
+        list.insertFirst(2);
+        list.insertFirst(8);
+        list.insertFirst(17);
+        list.insertLast(99);
+        list.insertRec(88,2);
+        list.insertRec(7,0);
 //        try{
 //            list.insert(100,3);
 //        }catch (IndexOutOfBoundsException err)
@@ -40,7 +42,7 @@ public class Main {
 //            System.out.println("Halle Lueiya" + err);
 //        }
 //
-//        list.display();
+        list.display();
 //        System.out.println(list.deleteFirst());
 //        list.display();
 //
@@ -76,15 +78,15 @@ public class Main {
                     will be no previous node.
          */
 
-    CircularLinkedList list = new CircularLinkedList();
-    list.insert(10);
-    list.insert(20);
-    list.insert(30);
-    list.insert(40);
-    list.display();
-
-    list.delete(300);
-    list.delete(20);
-    list.display();
+//    CircularLinkedList list = new CircularLinkedList();
+//    list.insert(10);
+//    list.insert(20);
+//    list.insert(30);
+//    list.insert(40);
+//    list.display();
+//
+//    list.delete(300);
+//    list.delete(20);
+//    list.display();
 }
     }
