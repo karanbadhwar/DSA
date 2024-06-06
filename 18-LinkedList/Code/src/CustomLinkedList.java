@@ -202,4 +202,29 @@ public class CustomLinkedList {
             this.next = next;
         }
     }
+
+    //QUESTIONS
+
+    //Deleting Duplicates
+    public void deleteDuplicates()
+    {
+        Node temp = head;
+
+        if(head == null)
+        {
+            return;
+        }
+
+        while(temp.next != null)
+        {
+            if( temp.value == temp.next.value)
+            {
+                temp.next = temp.next.next;
+                size--;
+            } else {
+                temp = temp.next;
+            }
+        }
+        tail = temp;
+    }
 }
