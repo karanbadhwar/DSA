@@ -2,11 +2,7 @@ package Questions;
 
 //https://leetcode.com/problems/linked-list-cycle
 
-// Answer in SinglyLinkedList Method named hasCycle.
-
 //Cycle Detection Method is used also known as Fast and Slow Pointer Method.
-
-
 
 public class LinkedListCycle {
     private class ListNode {
@@ -32,5 +28,85 @@ public class LinkedListCycle {
             }
         }
         return false;
+    }
+
+    //Finding the length of the cycle
+    public int lengthCycle(ListNode head) {
+        //Using Slow and Fast Pointer Method
+        ListNode fast = head;
+        ListNode slow = head;
+
+        while(fast != null && fast.next != null)
+        {
+            fast = fast.next.next;
+            slow = slow.next;
+            if(fast == slow)
+            {
+                //Calculate the Length
+                ListNode temp = slow;
+                int length = 0;
+
+                //1st way of doing it
+                do{
+                    temp = temp.next;
+                    length++;
+                }while(temp != slow);
+
+                return length;
+
+                //2nd way of doing it
+//                while(temp != fast)
+//                {
+//                    length++;
+//                }
+//
+//                return length+1;
+            }
+        }
+        return 0;
+    }
+
+    //https://leetcode.com/problems/linked-list-cycle-ii
+    //Returning the Starting point of the Cycle
+    public ListNode detectCycle(ListNode head) {
+        int length = 0;
+
+        //Checking if the list has Cycle
+        ListNode fast = head;
+        ListNode slow = head;
+
+        while(fast != null && fast.next != null)
+        {
+            fast = fast.next.next;
+            slow = slow.next;
+            if(fast == slow)
+            {
+                length = lengthCycle(slow);
+                break;
+            }
+        }
+
+        if(length == 0)
+        {
+            return null;
+        }
+
+        //Finding the start node.
+        ListNode f = head;
+        ListNode s = head;
+        while(length > 0)
+        {
+            s = s.next;
+            length--;
+        }
+
+        //Moving both forward until they meet at the start.
+        while(f != s)
+        {
+            f = f.next;
+            s = s.next;
+        }
+
+        return f;
     }
 }

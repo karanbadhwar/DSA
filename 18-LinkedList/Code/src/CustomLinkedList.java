@@ -267,6 +267,9 @@ public class CustomLinkedList {
 
     }
 
+
+
+
     public static void main(String[] args) {
         CustomLinkedList list1 = new CustomLinkedList();
         CustomLinkedList list2 = new CustomLinkedList();
