@@ -109,4 +109,51 @@ public class LinkedListCycle {
 
         return f;
     }
+
+    //https://leetcode.com/problems/happy-number
+    public boolean isHappy(int n) {
+        int slow = n;
+        int fast = n;
+
+        do{
+            slow = findSquare(slow);
+            fast = findSquare(findSquare(fast));
+
+            if(fast ==1 || slow == 1)
+            {
+                return true;
+            }
+
+        }
+        while(fast != slow);
+
+        return false;
+    }
+
+    private int findSquare(int num)
+    {
+        int ans = 0;
+
+        while(num > 0)
+        {
+            int rem = num%10;
+            ans += rem * rem;
+            num = num / 10;
+        }
+
+        return ans;
+    }
+
+    //https://leetcode.com/problems/middle-of-the-linked-list
+    public ListNode middleNode(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+
+        while( fast != null && fast.next != null)
+        {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
 }
