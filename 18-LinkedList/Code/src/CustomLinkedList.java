@@ -1,3 +1,5 @@
+import Questions.LLBubbleSort;
+
 public class CustomLinkedList {
 
     private Node head;
@@ -267,24 +269,120 @@ public class CustomLinkedList {
 
     }
 
+/* Leetcode submitted Merge Two Linked Lists
+public ListNode mergeTwoLists(ListNode first, ListNode second) {
+        ListNode mergedHead = new ListNode();
+        ListNode temp = mergedHead;
 
+        while(first != null && second != null)
+        {
+            if(first.val < second.val)
+            {
+                temp.next = first;
+                first = first.next;
+                temp = temp.next;
+            } else {
+                temp.next = second;
+                second = second.next;
+                temp = temp.next;
+            }
+        }
+
+        while(first != null)
+        {
+            temp.next = first;
+            first = first.next;
+            temp = temp.next;
+        }
+
+        while(second != null)
+        {
+            temp.next = second;
+            second = second.next;
+            temp = temp.next;
+        }
+        return mergedHead.next;
+    }
+ */
+
+    //Bubble Sort
+    public void bubbleSort()
+    {
+        bubbleSort( size - 1, 0);
+    }
+
+    private void bubbleSort(int row, int col) {
+        if(row <= 0)
+        {
+            return;
+        }
+
+        if(col < row)
+        {
+            Node first = get(col);
+            Node second = get(col + 1);
+
+            if(first.value > second.value)
+            {
+                //Swapping
+                // Cases
+                if(first == head)
+                {
+                    head = second;
+                    first.next = second.next;
+                    second.next = first;
+                } else if(second == tail)
+                {
+                    Node prev = get(col -1);
+                    prev.next = second;
+                    second.next = first;
+                    first.next = null;
+                    tail = first;
+
+                } else {
+                    Node prev = get(col -1);
+                    prev.next = second;
+                    first.next = second.next;
+                    second.next = first;
+                }
+            }
+            bubbleSort(row, col + 1);
+        } else {
+            bubbleSort(row-1, 0 );
+        }
+    }
 
 
     public static void main(String[] args) {
-        CustomLinkedList list1 = new CustomLinkedList();
-        CustomLinkedList list2 = new CustomLinkedList();
+//        CustomLinkedList list1 = new CustomLinkedList();
+//        CustomLinkedList list2 = new CustomLinkedList();
+//
+//        list1.insertLast(1);
+//        list1.insertLast(3);
+//        list1.insertLast(5);
 
-        list1.insertLast(1);
-        list1.insertLast(3);
-        list1.insertLast(5);
+//        list2.insertLast(1);
+//        list2.insertLast(2);
+//        list2.insertLast(9);
+//        list2.insertLast(14);
 
-        list2.insertLast(1);
-        list2.insertLast(2);
-        list2.insertLast(9);
-        list2.insertLast(14);
+//        CustomLinkedList mergeList = mergeTwoLists(list1,list2);
+//        mergeList.display();
 
-        CustomLinkedList mergeList = mergeTwoLists(list1,list2);
-        mergeList.display();
+        CustomLinkedList list = new CustomLinkedList();
+
+        list.insertFirst(10);
+        list.insertFirst(20);
+        list.insertFirst(30);
+        list.insertFirst(40);
+        list.insertFirst(50);
+        list.insertFirst(60);
+
+        list.display();
+
+        list.bubbleSort();
+
+        list.display();
 
     }
 }
