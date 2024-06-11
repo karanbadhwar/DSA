@@ -410,6 +410,51 @@ public ListNode mergeTwoLists(ListNode first, ListNode second) {
         }
     }
 
+    //Reverse In Between
+    public Node reverseBetween(Node head, int left, int right)
+    {
+        if(left == right)
+        {
+            return head;
+        }
+
+        //Skipping the (left - 1) Nodes
+        Node current = head;
+        Node previous = null;
+
+        for (int i = 0; current != null && i < left - 1; i++) {
+            previous = current;
+            current = current.next;
+        }
+
+        Node last = previous;
+        Node newEnd = current;
+        Node next = current.next;
+        //reverse between left and right
+        for (int i = 0; i < right - left + 1; i++) {
+
+            current.next = previous;
+            previous = current;
+            current = next;
+            if(next != null)
+            {
+                next = next.next;
+            }
+        }
+
+        if(last != null)
+        {
+            last.next = previous;
+        } else {
+            head = previous;
+        }
+        newEnd.next = current;
+
+        return head;
+    }
+
+
+
     public static void main(String[] args) {
 //        CustomLinkedList list1 = new CustomLinkedList();
 //        CustomLinkedList list2 = new CustomLinkedList();

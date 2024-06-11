@@ -116,4 +116,91 @@ public class LLMergeSort {
             midPrev.next = null;
             return slow;
         }
+
+    //Checking if the Linked List is Palindrome
+    public boolean isPalindrome(ListNode head) {
+
+        if(head == null || head.next == null)
+        {
+            return true;
+        }
+
+        ListNode mid= middleNode(head);
+
+        //Reversing the Second Half from middle onwards
+        ListNode previous = null;
+        ListNode current = mid;
+        ListNode next = null;
+
+        //Reversing the List
+        while(current != null)
+        {
+            next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+            if(next != null)
+            {
+                next = next.next;
+            }
+        }
+
+        ListNode secondHead = previous;
+        ListNode reverseHead = secondHead;
+
+        //Comparing both the halves
+
+        while(head != null && secondHead != null)
+        {
+            if(head.val != secondHead.val)
+            {
+                break;
+            }
+            head = head.next;
+            secondHead = secondHead.next;
+        }
+
+        //Reversing the List
+        reverseList(reverseHead);
+
+        //This means that one list is empty which means no element was found false;
+        if(head == null || secondHead == null)
+        {
+            return true;
+        }
+        return false;
     }
+    //Iterative reversing of LinkedList (In Place)
+    public void reverseList(ListNode head)
+    {
+
+        ListNode prev = null;
+        ListNode curr = head;
+        ListNode next = head.next;
+
+        /*
+        while(next != null)
+        {
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+            head = curr;
+            next = (next.next == null)? next.next : null;
+        }
+       */
+
+        // Other way,
+        while (curr != null)
+        {
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+
+            if(next != null)
+            {
+                next = next.next;
+            }
+            head = curr;
+        }
+    }
+}

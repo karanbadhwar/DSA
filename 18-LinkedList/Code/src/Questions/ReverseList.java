@@ -2,4 +2,4 @@ package Questions;
 
 //https://leetcode.com/problems/reverse-linked-list/
 
-//answer in method named reverseList in Circular Linked list class
+//answer in method named reverseList in Custom Linked list class

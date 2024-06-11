@@ -1,3 +1,3 @@
 package Questions;
 
-//Answered in the LinkedListCycle Class with method names lengthCycle
+//Answered in the Custom LinkedListCycle Class with method names lengthCycle
