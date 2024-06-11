@@ -352,6 +352,63 @@ public ListNode mergeTwoLists(ListNode first, ListNode second) {
         }
     }
 
+    //Reversing Linked List with Recursion
+    private void reverse(Node node)
+    {
+        //Base Condition
+        if(node == tail)
+        {
+            head = tail;
+            return;
+        }
+
+        reverse(node.next);
+        //current tail to current node
+        tail.next = node;
+
+        // Moving tail pointer one by one, making current node the tail
+        tail = node;
+
+        //Making sure the previous head now points to null, so in every call we point current tail to null.
+        tail.next = null;
+    }
+
+    //Iterative reversing of LinkedList (In Place)
+    public void reverseList()
+    {
+        if(size < 2)
+        {
+            return;
+        }
+        Node prev = null;
+        Node curr = head;
+        Node next = head.next;
+
+        /*
+        while(next != null)
+        {
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+            head = curr;
+            next = (next.next == null)? next.next : null;
+        }
+       */
+
+        // Other way,
+        while (curr != null)
+        {
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+
+            if(next != null)
+            {
+                next = next.next;
+            }
+            head = curr;
+        }
+    }
 
     public static void main(String[] args) {
 //        CustomLinkedList list1 = new CustomLinkedList();
