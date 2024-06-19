@@ -18,10 +18,15 @@ public class ImplementQueueUsingStack {
 
         //Linear Time Complexity for Insertion
         /*
-        helper.push(x);
-        for (int i = 0; i < main.size(); i++) {
-            main.push(helper.pop());
-        }
+            while(!main.isEmpty())
+            {
+                helper.push(main.pop());
+            }
+            main.push(x);
+            while(!helper.isEmpty())
+            {
+                main.push(helper.pop());
+             }
          */
 
         main.push(x);
