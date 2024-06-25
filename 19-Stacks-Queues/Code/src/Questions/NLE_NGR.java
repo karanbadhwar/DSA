@@ -23,14 +23,14 @@ public class NLE_NGR {
             if(stack.empty())
             {
                 result.add(-1);
-                stack.push(arr[i]);
+
             }
 
             //Condition 2
             else if(!stack.isEmpty() && stack.peek() > arr[i])
             {
                 result.add(stack.peek());
-                stack.push(arr[i]);
+
             }
 
             //Condition 3
@@ -40,9 +40,15 @@ public class NLE_NGR {
                 {
                     stack.pop();
                 }
-                result.add(stack.peek());
-                stack.push(arr[i]);
+                if(stack.empty())
+                {
+                    result.add(-1);
+                }else {
+                    result.add(stack.peek());
+                }
+
             }
+            stack.push(arr[i]);
         }
         ArrayList<Integer> finalResult = new ArrayList<>();
         for (int i = result.size()-1; i >= 0; i--) {
