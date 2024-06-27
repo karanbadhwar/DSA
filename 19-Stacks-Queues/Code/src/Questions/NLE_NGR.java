@@ -30,7 +30,6 @@ public class NLE_NGR {
             else if(!stack.isEmpty() && stack.peek() > arr[i])
             {
                 result.add(stack.peek());
-
             }
 
             //Condition 3
@@ -54,7 +53,7 @@ public class NLE_NGR {
         for (int i = result.size()-1; i >= 0; i--) {
             finalResult.add(result.get(i));
         }
-
+//        System.out.println(stack);
         return finalResult;
     }
     public static void main(String[] args) {
