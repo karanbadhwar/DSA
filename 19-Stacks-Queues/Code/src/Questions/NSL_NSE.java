@@ -17,9 +17,9 @@ public class NSL_NSE {
             if(stack.empty())
             {
                 result.add(-1);
-            } else if(stack.peek() < arr[i]) {
+            } else if(!stack.empty() &&  stack.peek() < arr[i]) {
                 result.add(stack.peek());
-            } else if(stack.peek() > arr[i]){
+            } else if(!stack.empty() &&  stack.peek() > arr[i]){
                 while(!stack.empty() && stack.peek() > arr[i])
                 {
                     stack.pop();
@@ -41,6 +41,7 @@ public class NSL_NSE {
 
     public static void main(String[] args) {
         int[] arr = {4,5,2,10,8};
+
 
         System.out.println(NSL(arr));
     }
