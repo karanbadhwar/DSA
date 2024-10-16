@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Stack;
 
 public class NGL_NLL {
-    //
+    //Nearest Greater to Left
 
     public static ArrayList<Integer> NGL(int[] arr)
     {
@@ -33,7 +33,7 @@ public class NGL_NLL {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,3,2,4};
+        int[] arr = {1,3,5,2,4};
         System.out.println(NGL(arr));
     }
 }
