@@ -7,8 +7,10 @@ import java.util.Stack;
 
 public class MaxHistogram {
 
-    public static void MaxHist(int[] arr)
+    public static int MaxHist(int[] arr)
     {
+        if(arr.length == 1) return arr[0];
+        if(arr.length == 0) return 0;
         ArrayList<Integer> left = NSL(arr);
         System.out.println(left);
         ArrayList<Integer> right = NSR(arr);
@@ -24,7 +26,7 @@ public class MaxHistogram {
             }
         }
         
-        System.out.println(max);
+        return max;
 
     }
 
@@ -39,17 +41,17 @@ public class MaxHistogram {
             {
                 result.add(pseudoIndex);
             }
-            else if (!stack.empty() && stack.peek().getVal() < arr[i])
+            else if (!stack.empty() && stack.peek().getVal() <= arr[i])
             {
                 result.add(stack.peek().getIndex());
-            } else if(!stack.empty() && stack.peek().getVal() > arr[i])
+            } else if(!stack.empty() && stack.peek().getVal() >= arr[i])
             {
                 while(!stack.empty() && stack.peek().getVal() > arr[i])
                 {
                     stack.pop();
                 }
 
-                if(stack.empty()? result.add(-1): result.add(stack.peek().getIndex()));
+                if(stack.empty()? result.add(pseudoIndex): result.add(stack.peek().getIndex()));
             }
             stack.push(new Pair(i, arr[i]));
         }
@@ -71,17 +73,17 @@ public class MaxHistogram {
             {
                 result.add(pseudoIndex);
             }
-            else if (!stack.empty() && stack.peek().getVal() < arr[i])
+            else if (!stack.empty() && stack.peek().getVal() <= arr[i])
             {
                 result.add(stack.peek().getIndex());
-            } else if(!stack.empty() && stack.peek().getVal() > arr[i])
+            } else if(!stack.empty() && stack.peek().getVal() >= arr[i])
             {
-                while(!stack.empty() && stack.peek().getVal() > arr[i])
+                while(!stack.empty() && stack.peek().getVal() >= arr[i])
                 {
                     stack.pop();
                 }
 
-                if(stack.empty()? result.add(-1): result.add(stack.peek().getIndex()));
+                if(stack.empty()? result.add(pseudoIndex): result.add(stack.peek().getIndex()));
             }
             stack.push(new Pair(i, arr[i]));
 
@@ -92,7 +94,8 @@ public class MaxHistogram {
     } 
 
     public static void main(String[] args) {
-        MaxHist(new int[]{2,1,5,6,2,3});
+        int answer = MaxHist(new int[]{1,1});
+        System.out.println(answer);
     }
 }
 
