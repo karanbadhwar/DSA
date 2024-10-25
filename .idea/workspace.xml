@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41f1d71f-4077-40e3-8363-cdd32550dce0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/23-FileHandling/23-FileHandling.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/23-FileHandling/src/FileImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/23-FileHandling/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/23-FileHandling/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/23-FileHandling/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/23-FileHandling/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +38,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.FileImpl.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.NGL_NLL.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -50,7 +52,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font"
   }
 }]]></component>
   <component name="RecentsManager">
