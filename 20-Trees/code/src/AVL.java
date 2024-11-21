@@ -1,5 +1,5 @@
 public class AVL {
-    //AVL is a SElf Balancing Binary Tree
+    //AVL is a Self Balancing Binary Tree
 
     public class Node{
         private int value;
