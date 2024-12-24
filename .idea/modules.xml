@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/23-FileHandling/23-FileHandling.iml" filepath="$PROJECT_DIR$/23-FileHandling/23-FileHandling.iml" />
       <module fileurl="file://$PROJECT_DIR$/24-Heaps/24-Heaps.iml" filepath="$PROJECT_DIR$/24-Heaps/24-Heaps.iml" />
       <module fileurl="file://$PROJECT_DIR$/25-HashMaps/25-HashMaps.iml" filepath="$PROJECT_DIR$/25-HashMaps/25-HashMaps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10-Sorting/CountSort/CountSort.iml" filepath="$PROJECT_DIR$/10-Sorting/CountSort/CountSort.iml" />
       <module fileurl="file://$PROJECT_DIR$/DSA.iml" filepath="$PROJECT_DIR$/DSA.iml" />
     </modules>
   </component>
