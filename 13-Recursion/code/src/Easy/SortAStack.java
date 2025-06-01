@@ -1,5 +1,6 @@
 package Easy;
 
+import java.util.HashMap;
 import java.util.Stack;
 
 public class SortAStack {
@@ -42,4 +43,6 @@ public class SortAStack {
         stack.push(val);
 
     }
+
+
 }
