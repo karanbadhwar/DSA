@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41f1d71f-4077-40e3-8363-cdd32550dce0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/13-Recursion/code/src/Arrays/SortAnArrayWithRecur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13-Recursion/code/src/Easy/SortAStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10-Sorting/CountSort/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/10-Sorting/CountSort/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DSA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSA/Questions/NGL_NLL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/13-Recursion/code/src/Arrays/SortAnArrayWithRecur.java" beforeDir="false" afterPath="$PROJECT_DIR$/13-Recursion/code/src/Arrays/SortAnArrayWithRecur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA/Arrays/SortAnArrayWithRecur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA/Arrays/SortAnArrayWithRecur.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +43,8 @@
     "Application.Main.executor": "Run",
     "Application.NGL_NLL.executor": "Run",
     "Application.PrintTillN.executor": "Run",
-    "Application.SortAnArrayWithRecur.executor": "Run",
+    "Application.SortAStack.executor": "Run",
+    "Application.SortAnArrayWithRecur.executor": "Debug",
     "Application.Str.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -68,26 +67,6 @@
       <recent name="C:\Users\kbb91\Desktop\DSA\19-Stacks-Queues\Code\src\Questions" />
       <recent name="C:\Users\kbb91\Desktop\DSA\19-Stacks-Queues\Code\src" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="PrintTillN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="av_recrusion.PrintTillN" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="av_recrusion.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.PrintTillN" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

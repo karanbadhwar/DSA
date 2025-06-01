@@ -1,12 +1,11 @@
 package Arrays;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class SortAnArrayWithRecur {
     public static void main(String[] args) {
-        ArrayList<Integer> arr = new ArrayList<>(List.of(0,1,5,2));
+        ArrayList<Integer> arr = new ArrayList<>(List.of(5,4,3,2,1));
         sortByRecur(arr);
         System.out.println(arr);
     }
