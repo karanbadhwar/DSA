@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41f1d71f-4077-40e3-8363-cdd32550dce0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/13-Recursion/code/src/KthSymbolInGrammar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-Recursion/code/src/ReverseAStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13-Recursion/code/src/TowerOfHanoi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13-Recursion/code/src/KthSymbolInGrammar.java" beforeDir="false" afterPath="$PROJECT_DIR$/13-Recursion/code/src/KthSymbolInGrammar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA/KthSymbolInGrammar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA/KthSymbolInGrammar.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +52,7 @@
     "Application.SortAStack.executor": "Run",
     "Application.SortAnArrayWithRecur.executor": "Debug",
     "Application.Str.executor": "Run",
+    "Application.TowerOfHanoi.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -99,9 +101,23 @@
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/13-Recursion/code/src/TowerOfHanoi.java</url>
+          <line>7</line>
+          <properties class="TowerOfHanoi" method="solve">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="mid" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
