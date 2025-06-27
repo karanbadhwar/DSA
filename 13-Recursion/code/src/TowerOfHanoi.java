@@ -1,6 +1,6 @@
 public class TowerOfHanoi {
     public static void main(String[] args) {
-        int plate = 3;
+        int plate = 4;
         solve(plate,1,3,2);
     }
 
