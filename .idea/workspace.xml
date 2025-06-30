@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41f1d71f-4077-40e3-8363-cdd32550dce0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/13-Recursion/code/src/LetterCasePermutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13-Recursion/code/src/GenerateAllBalancedParenthesis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13-Recursion/code/src/PermutationWithSpace.java" beforeDir="false" afterPath="$PROJECT_DIR$/13-Recursion/code/src/PermutationWithSpace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSA/PermutationWithSpace.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA/PermutationWithSpace.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +44,7 @@
   "keyToString": {
     "Application.DeleteMiddleElementInStack.executor": "Run",
     "Application.FileImpl.executor": "Run",
+    "Application.GenerateAllBalancedParenthesis.executor": "Run",
     "Application.Heap.executor": "Debug",
     "Application.KthSymbolInGrammar.executor": "Debug",
     "Application.LetterCasePermutation.executor": "Run",
