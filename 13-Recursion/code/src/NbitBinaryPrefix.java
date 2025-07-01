@@ -22,12 +22,13 @@ public class NbitBinaryPrefix {
             return;
         }
 
-        if (zero == one) {
-            solve(output + "1", one + 1, zero, n - 1, result);
-            return;
-        }
+//        if (zero == one) {
+//            solve(output + "1", one + 1, zero, n - 1, result);
+//            return;
+//        }
         solve(output + "1", one + 1, zero, n - 1, result);
-        solve(output + "0", one, zero + 1, n - 1, result);
+        if (one > zero)
+            solve(output + "0", one, zero + 1, n - 1, result);
 
     }
 
