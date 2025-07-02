@@ -17,7 +17,7 @@ public class JosephusProblem {
         ArrayList<Integer> people =
                 new ArrayList<>(IntStream.rangeClosed(1,n).boxed().toList());
         solve(people, k-1, 0);
-        return people.get(0);
+        return people.getFirst();
     }
 
     public static void solve(ArrayList<Integer> arr, int k, int currentIndex){
