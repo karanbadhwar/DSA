@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41f1d71f-4077-40e3-8363-cdd32550dce0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/13-Recursion/code/src/NbitBinaryPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/13-Recursion/code/src/NbitBinaryPrefix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13-Recursion/code/src/JosephusProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,7 @@
     "Application.FileImpl.executor": "Run",
     "Application.GenerateAllBalancedParenthesis.executor": "Run",
     "Application.Heap.executor": "Debug",
+    "Application.JosephusProblem.executor": "Run",
     "Application.KthSymbolInGrammar.executor": "Debug",
     "Application.LetterCasePermutation.executor": "Run",
     "Application.Main.executor": "Run",
