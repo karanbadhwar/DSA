@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41f1d71f-4077-40e3-8363-cdd32550dce0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/13-Recursion/code/src/JosephusProblem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,40 +39,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DeleteMiddleElementInStack.executor": "Run",
-    "Application.FileImpl.executor": "Run",
-    "Application.GenerateAllBalancedParenthesis.executor": "Run",
-    "Application.Heap.executor": "Debug",
-    "Application.JosephusProblem.executor": "Run",
-    "Application.KthSymbolInGrammar.executor": "Debug",
-    "Application.LetterCasePermutation.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.NGL_NLL.executor": "Run",
-    "Application.NbitBinaryPrefix.executor": "Run",
-    "Application.PermutationWithSpace.executor": "Run",
-    "Application.PrintTillN.executor": "Run",
-    "Application.ReverseAStack.executor": "Debug",
-    "Application.SortAStack.executor": "Run",
-    "Application.SortAnArrayWithRecur.executor": "Debug",
-    "Application.Str.executor": "Run",
-    "Application.TowerOfHanoi.executor": "Debug",
-    "Application.UniqueSubsetsVariations.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.ide.FileNotInSourceRootChecker.no.check": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kbb91/Desktop/Spring-Boot/springAiDemo",
-    "onboarding.tips.debug.path": "C:/Users/kbb91/Desktop/DSA/10-Sorting/CountSort/src/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DeleteMiddleElementInStack.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FileImpl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GenerateAllBalancedParenthesis.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Heap.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.JosephusProblem.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KthSymbolInGrammar.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.LetterCasePermutation.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NGL_NLL.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NbitBinaryPrefix.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PermutationWithSpace.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PrintTillN.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReverseAStack.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.SortAStack.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SortAnArrayWithRecur.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Str.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TowerOfHanoi.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.UniqueSubsetsVariations.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.ide.FileNotInSourceRootChecker.no.check&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kbb91/Desktop/Spring-Boot/springAiDemo&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/kbb91/Desktop/DSA/10-Sorting/CountSort/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kbb91\Desktop\DSA\13-Recursion\src" />
