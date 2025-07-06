@@ -1,17 +1,23 @@
 package DP;
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class KnapsackMemoization {
 
     public static void main(String[] args) {
-        int[] wt = {4,1,4,5,1};
-        int[] val = {1,3,1,2,3};
+        int[] wt = {4,5,1};
+        int[] val = {1,2,3};
         int capacity = 4;
         int[][] arr = IntStream.range(0,val.length+1)
                 .mapToObj(i-> IntStream.generate(() -> -1).limit(capacity+1).toArray())
                 .toArray(int[][]::new);
         int maxProfit = knapsack(wt, val, capacity, wt.length,arr);
         System.out.println(maxProfit);
+
+//        System.out.println("Answer stored in matrix: " + arr[wt.length][capacity]);
+        for (int[] array: arr){
+            System.out.println(Arrays.toString(array));
+        }
     }
 
     public static int knapsack(int[] weight, int[] val, int capacity, int n, int[][] matrix){
@@ -33,8 +39,6 @@ public class KnapsackMemoization {
         }
         return matrix[n][capacity] = knapsack(weight,val,capacity, n-1,matrix);
     }
-
-
 
 
 }
