@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41f1d71f-4077-40e3-8363-cdd32550dce0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/13-Recursion/code/src/DP/KnapsackTabulation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13-Recursion/code/src/DP/KnapsackMemoization.java" beforeDir="false" afterPath="$PROJECT_DIR$/13-Recursion/code/src/DP/KnapsackMemoization.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +48,9 @@
     "Application.GenerateAllBalancedParenthesis.executor": "Run",
     "Application.Heap.executor": "Debug",
     "Application.JosephusProblem.executor": "Run",
-    "Application.KnapsackMemoization.executor": "Debug",
+    "Application.KnapsackMemoization.executor": "Run",
     "Application.KnapsackRecursive.executor": "Debug",
+    "Application.KnapsackTabulation.executor": "Run",
     "Application.KthSymbolInGrammar.executor": "Debug",
     "Application.LetterCasePermutation.executor": "Run",
     "Application.Main.executor": "Run",
@@ -103,15 +104,6 @@
           <url>file://$PROJECT_DIR$/20-Trees/code/question/src/Main.java</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/13-Recursion/code/src/DP/KnapsackMemoization.java</url>
-          <line>22</line>
-          <properties class="DP.KnapsackMemoization" method="knapsack">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
