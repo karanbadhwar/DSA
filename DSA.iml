@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/05-first-java-program/first-idea-project/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/13-Recursion/code/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/08-Arrays-ArrayList/Code/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/13-Recursion/code/src/Backtracking" />
     </content>
     <orderEntry type="inheritedJdk" />

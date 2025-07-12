@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41f1d71f-4077-40e3-8363-cdd32550dce0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/13-Recursion/code/src/DP/KnapsackTabulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-Arrays-ArrayList/Code/src/arrayQuestions/SingleNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DSA.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +60,7 @@
     "Application.PermutationWithSpace.executor": "Run",
     "Application.PrintTillN.executor": "Run",
     "Application.ReverseAStack.executor": "Debug",
+    "Application.SingleNumber.executor": "Run",
     "Application.SortAStack.executor": "Run",
     "Application.SortAnArrayWithRecur.executor": "Debug",
     "Application.Str.executor": "Run",
