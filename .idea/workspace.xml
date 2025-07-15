@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41f1d71f-4077-40e3-8363-cdd32550dce0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/08-Arrays-ArrayList/Code/src/arrayQuestions/MaximumSubArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-Arrays-ArrayList/Code/src/arrayQuestions/LeftRotation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +52,7 @@
     "Application.KnapsackRecursive.executor": "Debug",
     "Application.KnapsackTabulation.executor": "Run",
     "Application.KthSymbolInGrammar.executor": "Debug",
+    "Application.LeftRotation.executor": "Debug",
     "Application.LetterCasePermutation.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MaximumSubArray.executor": "Run",
@@ -106,6 +107,11 @@
           <url>file://$PROJECT_DIR$/20-Trees/code/question/src/Main.java</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/08-Arrays-ArrayList/Code/src/arrayQuestions/LeftRotation.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
